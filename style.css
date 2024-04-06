@@ -1,22 +1,43 @@
 body {
     margin: 0;
     padding: 0;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
+    flex-direction: column;
     font-size: 20px;
+    background-color: #7f09e0;
+}
+
+.heading-div {
+    background-color: whitesmoke;
+    border-radius: 8px;
+    padding: 8px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: transparent;
+    background-image: linear-gradient(to right, #7700FF 20%, #FF00B8);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin: 0;
 }
 
 .main {
-    height: 400px;
     width: 250px;
-    background: #3A3A38;
-    border-radius: 10px;
-    display: grid;
-    place-items: center;
-    color: #fff;
-    font-family: verdana;
-    border-radius: 15px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(0px) saturate(119%);
+    -webkit-backdrop-filter: blur(0px) saturate(119%);
+    background-color: rgba(255, 255, 255, 0.46);
+    border-radius: 8px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
 #colorPicker {
@@ -24,15 +45,16 @@ body {
     outline: none;
     border: none;
     height: 40px;
-    width: 60px;
+    width: 60%;
+    margin: auto;
     cursor: pointer;
 }
 
 #box {
     outline: none;
-    border: 2px solid #333;
-    border-radius: 50px;
-    height: 40px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    height: 38px;
     width: 120px;
     padding: 0 10px;
     align-items: center;
